@@ -14,4 +14,4 @@ pip install key-generator
 
 ENTRYPOINT [ "python3" ]
 
-CMD ["python3", "app.py"]
+CMD ["app.py"]
