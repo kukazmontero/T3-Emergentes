@@ -11,7 +11,4 @@ pip install flask_httpauth \
 pip install jsonify \
 pip install key-generator
 
-
-ENTRYPOINT [ "python3" ]
-
 CMD ["app.py"]
