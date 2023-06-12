@@ -57,3 +57,4 @@ def create_tables():
 
 
     db.commit()
+    db.close()
