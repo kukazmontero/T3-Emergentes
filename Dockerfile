@@ -1,16 +1,13 @@
-FROM python:3.8-slim-buster
-
-EXPOSE 5000
+FROM python:alpine3.18
 
 WORKDIR /app
 
-COPY . .
+COPY . /app
 
-RUN pip install flask \
-pip install flask_httpauth \
-pip install jsonify \
-pip install key-generator
+RUN pip install --no-cache-dir flask python-dotenv
 
-ENTRYPOINT [ "python" ]
+RUN apk add --no-cache sqlite
 
-CMD ["app.py"]
+EXPOSE 5000
+
+CMD ["python", "app.py"]
