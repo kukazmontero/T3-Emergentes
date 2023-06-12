@@ -228,4 +228,4 @@ def crearsensor():
 
 if __name__== '__main__':
     tablas.create_tables()
-    app.run(debug=True)
+    app.run(debug=True, port=4000)
